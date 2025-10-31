@@ -2,6 +2,13 @@ import streamlit as st
 from story_narrator import generate_story, generate_transcription
 from PIL import Image
 
+st.set_page_config(
+    page_title="AI Multimodal Vision Narrator",
+    page_icon="🎨",
+    layout="wide",        # 👈 this makes your app full width
+    initial_sidebar_state="expanded"  # optional
+)
+
 
 st.title("AI Multimodel Vision Narrator")
 st.markdown("Upload images choose style and the let the AI narrate or write the story for you.")
